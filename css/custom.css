@@ -1,0 +1,192 @@
+svg {
+	font: 10px sans-serif;
+	background-color: #333;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+svg.input_box {
+	background-color: #111;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+
+/* -------------------------------- 
+
+App Style
+
+-------------------------------- */
+body {
+  font-size: 120%;
+  font-family: "Lato", Raleway;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #7F8099;
+  margin: 0;
+}
+
+.navbar {
+	background: #0F1A2B;
+	color: #ffffff;
+	font-size: 200%;
+	height: 60px;
+	border: 0;
+	width: 100%;
+}
+
+.navOp {
+	opacity: 0.9;
+}
+
+.navbar-form {
+	padding-top: 10px;
+	padding-right: 0px;
+}
+
+p {
+	font-size: 90%;
+	display: inline;
+}
+/*p.spacer {
+	padding-right: 10px;
+}*/
+p.p_label {
+	font-weight: bold;
+	padding-left: 7px;
+	padding-right: 3px;
+}
+
+.container {
+	width: 100%;
+	padding-right: 5%;
+}
+.row {
+	height: 100%;
+	width: 100%;
+}
+.spacer {
+	height: 10px;
+}
+
+.btn {
+	background: #FF9A23;
+	border: 0;
+	border-radius: 0px;
+}
+
+.btn:hover {
+	background: #FFE50D;
+	color: #0F1A2B;
+}
+
+#cd-logo {
+	left: 10px;
+	top: 8px;
+	width: 100px;
+	height: 50px;
+}
+#cd-logo img {
+	display: block;
+}
+
+#chart-holder {
+	margin-left: 0px;
+	margin-top: 60px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 60%;
+}
+#cntrl-holder {
+	height: 30%;
+}
+
+path {
+	fill: none;
+	stroke: #000;
+	stroke-width: 1px;
+	cursor: default;
+}
+
+path.change_line{
+	stroke: #FFF;
+	stroke-width: 2px;
+}
+
+path.level_line{
+	stroke: #FFF;
+	stroke-width: 2px;
+}
+
+path.dragline{
+	pointer-events: none;
+}
+
+path.hidden{
+	stroke-width: 0;
+}
+
+path.chart_line{
+	stroke: steelblue;
+	stroke-width: 1px; 
+}
+
+rect.highlight-bar{
+	stroke: none;
+	stroke-width: 0px; 
+	opacity: 0.3;
+	fill: red;
+}
+rect.hidden{
+	fill: none;
+}
+rect.highlight-bar.true{
+	fill: green;
+}
+rect.highlight-bar.hidden{
+	fill: none;
+}
+/*
+.brush .extent {
+	fill-opacity: .3;
+	stroke: #fff;
+	shape-rendering: crispEdges;
+}
+*/
+.axis line,
+.axis path {
+	fill: none;
+	stroke: #FFF;
+	shape-rendering: crispEdges;
+}
+
+
+.axis text {
+	/*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
+	fill: none;
+	stroke: #FFF;
+	shape-rendering: crispEdges;
+}
